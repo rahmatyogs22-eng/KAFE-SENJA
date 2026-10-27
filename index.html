@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopi Kita - Pesan Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>☕ Kopi Kita</h1>
+      <p>Fresh coffee, happy day.</p>
+    </div>
+    <a href="?admin=1" class="admin-link">Admin</a>
+  </header>
+
+  <main id="customerPage">
+    <section class="welcome">
+      <p>SELAMAT DATANG</p>
+      <h2>Ngopi dulu, yuk!</h2>
+      <p>Silakan pilih menu favoritmu.</p>
+      <span id="tableLabel" class="table-badge">Pesanan online</span>
+    </section>
+
+    <section class="menu-section">
+      <h2>Menu kami</h2>
+      <div id="menuList" class="menu-grid"></div>
+    </section>
+
+    <section class="cart-section">
+      <h2>Keranjang pesanan</h2>
+      <div id="cartList">Belum ada pesanan.</div>
+      <h3>Total: <span id="total">Rp0</span></h3>
+
+      <form id="orderForm">
+        <label for="customerName">Nama pelanggan</label>
+        <input id="customerName" required placeholder="Masukkan nama">
+
+        <label for="notes">Catatan pesanan</label>
+        <textarea id="notes" placeholder="Contoh: es sedikit"></textarea>
+
+        <button type="submit" class="primary">
+          Kirim Pesanan
+        </button>
+      </form>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <main id="adminPage" hidden>
+    <section class="welcome">
+      <h2>Dashboard Pesanan</h2>
+      <p>Daftar pesanan yang tersimpan di browser ini.</p>
+      <a href="./">← Kembali ke menu</a>
+    </section>
+    <section class="cart-section">
+      <button id="refreshOrders" class="secondary">
+        Muat ulang pesanan
+      </button>
+      <div id="ordersList"></div>
+    </section>
+  </main>
+
+  <footer>© 2026 Kopi Kita</footer>
+  <script src="script.js"></script>
+</body>
+</html>

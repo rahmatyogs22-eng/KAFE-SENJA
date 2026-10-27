@@ -1,0 +1,191 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f5f0;
+  color: #30251f;
+}
+
+.topbar {
+  background: #38251c;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.topbar p {
+  margin: 6px 0 0;
+  color: #e3d5c8;
+}
+
+.admin-link {
+  color: white;
+  text-decoration: none;
+  border: 1px solid #bda48d;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+main {
+  max-width: 950px;
+  margin: auto;
+  padding: 22px;
+}
+
+.welcome {
+  background: #ead9c5;
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+}
+
+.welcome h2 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.table-badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.menu-card, .cart-section {
+  background: white;
+  border-radius: 14px;
+  padding: 17px;
+  box-shadow: 0 3px 12px #38251c0b;
+}
+
+.menu-card h3 {
+  margin: 8px 0;
+}
+
+.menu-card p {
+  color: #78695f;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  color: #80512e;
+  margin: 12px 0;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary, .add-btn {
+  background: #68452e;
+  color: white;
+}
+
+.add-btn {
+  width: 100%;
+}
+
+.secondary {
+  background: #ead9c5;
+  color: #38251c;
+}
+
+.cart-section {
+  margin-top: 25px;
+}
+
+.cart-row, .order-row {
+  padding: 13px 0;
+  border-bottom: 1px solid #eee4dc;
+}
+
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cart-row button {
+  padding: 5px 9px;
+  margin-left: 4px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d9cfc5;
+  border-radius: 8px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 75px;
+  resize: vertical;
+}
+
+form .primary {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.status {
+  padding: 7px;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #78695f;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (min-width: 650px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 14px;
+  }
+
+  .welcome h2 {
+    font-size: 25px;
+  }
+}
